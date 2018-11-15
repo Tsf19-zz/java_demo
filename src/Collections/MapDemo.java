@@ -114,16 +114,16 @@ public class MapDemo {
 		
 		Iterator<Integer> itr1 = values.iterator();
 
-//		while(itr1.hasNext()) {
-//			int v = itr1.next();
-//			if(	v%2==0 )
-//				System.out.println(v);
-//		}
-		
 		while(itr1.hasNext()) {
-			if(	(itr1.next())%2==0 )
-				System.out.println((Integer)(itr1));
+			int v = itr1.next();
+			if(	v%2==0 )
+				System.out.println(v);
 		}
+		
+//		while(itr1.hasNext()) {
+//			if(	(itr1.next())%2==0 )
+//				System.out.println((Integer)(itr1.next()));
+//		}
 		
 
 		System.out.println("hm.get() : "+hm.get('U'));
