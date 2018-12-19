@@ -51,7 +51,7 @@ class C extends B {
 		System.out.println("C.G");
 	}
 
-	void m3() {  //CTB
+	void m3() {  //RTB
 		System.out.println("C.F");
 	}
 	
