@@ -1,5 +1,9 @@
 package com.java.CoreJavaTopics;
 
+import java.io.UnsupportedEncodingException;
+import java.net.URLDecoder;
+import java.net.URLEncoder;
+
 public class StringManipulation {
 
 	public static void main(String[] args) {
@@ -51,6 +55,24 @@ public class StringManipulation {
 	
 		str7 = str1.trim().replaceAll("\\s{2,}" , " ");
 		System.out.println("str7 :"+str7+" <--CORRECT");
+		
+		//https://www.tutorialspoint.com/html/html_url_encoding.htm
+		try {
+			
+			System.out.println("\nString Before Encoding:Mohammed  Tou$if Shekhani%  ");
+			//String Before Encoding:Mohammed  Tou$if Shekhani%  
+			
+			String encoded = URLEncoder.encode(" Mohammed  Tou$if Shekhani%  ", "UTF-8");	
+			System.out.println("String After Encoding:"+encoded);
+			//String After Encoding:+Mohammed++Tou%24if+Shekhani%25++
+			
+			String decoded = URLDecoder.decode(encoded, "UTF-8");
+			System.out.println("String After Decoding:"+decoded);
+			//String After Decoding: Mohammed  Tou$if Shekhani%  
+			
+		} catch (UnsupportedEncodingException e) {
+			e.printStackTrace();
+		}
 		
 		
 	}
