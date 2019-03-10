@@ -1,4 +1,4 @@
-package com.java.CoreJavaTopics;
+package CoreJavaTopics;
 
 /* private, final and static members (methods and variables) and Any Variables use static binding
  * while for virtual methods (In Java methods are virtual by default) 

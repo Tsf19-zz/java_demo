@@ -1,4 +1,4 @@
-package com.java.Multithreading;
+package Multithreading;
 
 class Printing extends Thread {
 

@@ -22,8 +22,8 @@ the System class belongs to java.lang package
  * 
  * */
 
-package com.java.CoreJavaTopics;
-import static com.java.CoreJavaTopics.SampleStaticImport.show;
+package CoreJavaTopics;
+import static CoreJavaTopics.SampleStaticImport.show;
 // Static Import
 import static java.lang.System.out;
 

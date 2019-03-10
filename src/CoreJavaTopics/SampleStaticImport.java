@@ -1,4 +1,4 @@
-package com.java.CoreJavaTopics;
+package CoreJavaTopics;
 
 public class SampleStaticImport {
 	public static void show() {

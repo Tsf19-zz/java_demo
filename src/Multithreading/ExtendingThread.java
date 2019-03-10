@@ -1,4 +1,4 @@
-package com.java.Multithreading;
+package Multithreading;
 
 class NumberPrinting extends Thread {
 	public void run() {
