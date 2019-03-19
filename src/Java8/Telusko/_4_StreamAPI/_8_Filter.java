@@ -37,6 +37,8 @@ public class _8_Filter {
 		
 		System.out.println(values.stream().filter(p).reduce(0, Integer::sum));
 		
+		System.out.println(values.stream().filter(i -> (i%5 == 0)).reduce(0, Integer::sum));
+		
 	}
 	
 
