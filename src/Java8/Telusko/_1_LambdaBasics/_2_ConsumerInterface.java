@@ -1,7 +1,7 @@
 /**
  * 
  */
-package Java8.Telusko;
+package Java8.Telusko._1_LambdaBasics;
 
 import java.util.Arrays;
 import java.util.List;
