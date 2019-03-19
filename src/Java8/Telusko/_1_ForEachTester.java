@@ -1,7 +1,7 @@
 /**
  * 
  */
-package Java8.forEach;
+package Java8.Telusko;
 
 import java.util.Arrays;
 import java.util.Iterator;
@@ -16,7 +16,7 @@ import java.util.List;
  * @INTERNAL_ITERATION
  *  When loops gets data from inside of the body
  */
-public class ForEachTester {
+public class _1_ForEachTester {
 	
 	public static void main(String[] args) {
 
@@ -44,7 +44,11 @@ public class ForEachTester {
 		}
 		
 		//INTERNAL ITERATION(STREAMAPI)
+		
+//		list.forEach((Integer i) -> System.out.println("forEach: "+i));
+//		OR
 		list.forEach(i -> System.out.println("forEach: "+i));
+		
 		
 	}
 
