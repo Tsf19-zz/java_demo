@@ -1,7 +1,7 @@
 /**
  * 
  */
-package Java8.JavaBrains;
+package Java8.JavaBrains._1_Basics;
 
 /**
  * @author Tousif
@@ -27,6 +27,9 @@ public class _3_InterfaceImplementationUsingLambdaExpression {
 		
 		
 	}
-	//Functional Interface are the Interface with 
+//	Functional Interface are the Interface which has only one method init
+//	one should mark interface as an functional inerface annotation so that no one other should change it or 
+//	add an extra method , otherwise lambda won,t be able to use it
+//	implementation of lamda will fail 
 	
 }

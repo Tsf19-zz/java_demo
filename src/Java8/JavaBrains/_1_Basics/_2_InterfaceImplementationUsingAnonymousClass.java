@@ -1,7 +1,7 @@
 /**
  * 
  */
-package Java8.JavaBrains;
+package Java8.JavaBrains._1_Basics;
 
 /**
  * @author Tousif
