@@ -25,9 +25,42 @@ public class _2_ConsumerInterface {
 			}
 
 		};
-	
+
 		values.forEach(consumer);
-	
+
+		//OR
+
+		values.forEach(new Consumer<Integer>() {
+			public void accept(Integer i) {
+				System.out.println(i);
+			}
+
+		});
+
+		//OR
+
+		values.forEach(
+				(Integer i) -> {
+					System.out.println(i);
+				}
+				);
+
+		//OR
+
+		values.forEach(
+
+				(Integer i) -> System.out.println(i)
+
+				);
+
+		//OR
+
+		values.forEach( i -> System.out.println(i) );
+		
+		//OR
+		
+		values.forEach(System.out::println);
+
 	}
 
 

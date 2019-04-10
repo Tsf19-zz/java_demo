@@ -30,7 +30,7 @@ public class _2_StreamAPI {
 
 //		OR
 		
-		System.out.println(values.stream().map(i -> i*2).reduce(0, (c,e) -> c+e));
+		System.out.println(values.stream().map(i -> i*2).reduce(0, (a,b) -> a+b));
 		
 		
 		

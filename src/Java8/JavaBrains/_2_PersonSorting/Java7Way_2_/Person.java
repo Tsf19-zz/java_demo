@@ -1,7 +1,7 @@
 /**
  * 
  */
-package Java8.JavaBrains._2_Basics;
+package Java8.JavaBrains._2_PersonSorting.Java7Way_2_;
 
 /**
  * @author Tousif
