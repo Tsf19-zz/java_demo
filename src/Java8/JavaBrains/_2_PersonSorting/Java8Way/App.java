@@ -1,7 +1,7 @@
 /**
  * 
  */
-package Java8.JavaBrains._2_Basics;
+package Java8.JavaBrains._2_PersonSorting.Java8Way;
 
 import java.util.Arrays;
 import java.util.List;
@@ -15,11 +15,11 @@ public class App {
 	public static void main(String[] args) {
 		List<Person> persons = Arrays.asList(
 				
-				new Person("fN1","lN1",1),
-				new Person("fN2","lN2",2),
-				new Person("fN3","lN3",3),
-				new Person("fN4","lN4",4),
-				new Person("fN5","lN5",5)
+				new Person("firstName1","lastName1",11),
+				new Person("firstName2","clastName2",22),
+				new Person("firstName3","clastName3",33),
+				new Person("firstName4","ClastName4",44),
+				new Person("firstName5","lastName5",55)
 				);
 		
 		// Step 1: Sort list by last name
