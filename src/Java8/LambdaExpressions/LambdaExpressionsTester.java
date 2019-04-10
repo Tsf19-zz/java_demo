@@ -6,7 +6,7 @@ package Java8.LambdaExpressions;
  */
 public class LambdaExpressionsTester {
 	
-	interface MathOperation {
+	interface MathOperation { //Declaring Interface
 		int operation(int a, int b);
 	}
 	
@@ -22,19 +22,18 @@ public class LambdaExpressionsTester {
 	public static void main(String[] args) {
 
 		LambdaExpressionsTester tester = new LambdaExpressionsTester();
-
 		
 		//with type declaration
-		MathOperation addition = (int a, int b) -> a + b;
+		MathOperation addition = (int a, int b) -> a + b; //Defining Interface
 
 		//with out type declaration
-		MathOperation subtraction = (a, b) -> a - b;
+		MathOperation subtraction = (a, b) -> a - b; //Defining Interface
 
 		//with return statement along with curly braces
-		MathOperation multiplication = (int a, int b) -> { return a * b; };
+		MathOperation multiplication = (int a, int b) -> { return a * b; }; //Defining Interface
 
 		//without return statement and without curly braces
-		MathOperation division = (int a, int b) -> a / b;
+		MathOperation division = (int a, int b) -> a / b;  //Defining Interface
 
 		System.out.println("10 + 5 = " + tester.operate(10, 5, addition));
 		System.out.println("10 - 5 = " + tester.operate(10, 5, subtraction));

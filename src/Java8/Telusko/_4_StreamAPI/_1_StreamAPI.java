@@ -27,7 +27,7 @@ public class _1_StreamAPI {
 
 		//OR
 		
-		System.out.println(values.stream().reduce(0, (c,e) -> c+e));
+		System.out.println(values.stream().reduce(0, (a,b) -> a+b));
 		
 		
 	}
