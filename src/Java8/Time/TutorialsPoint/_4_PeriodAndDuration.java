@@ -16,13 +16,13 @@ import java.time.temporal.ChronoUnit;
 public class _4_PeriodAndDuration {
 
 	public static void main(String[] args) {
-
-		//Get the current date
+		
+		/**Get the current date*/
 		LocalDate today = LocalDate.now();
 		System.out.println("Current date: " + today);
 		//Current date: 2019-04-17
 
-		//add 7 month to the current date
+		/**add 7 month to the current date*/
 		LocalDate date2 = today.plus(7, ChronoUnit.MONTHS);
 		System.out.println("Date after 7 months: " + date2);
 		//Date after 7 months: 2019-11-17

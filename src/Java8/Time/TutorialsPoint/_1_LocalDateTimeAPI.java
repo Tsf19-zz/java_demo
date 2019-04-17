@@ -60,7 +60,7 @@ public class _1_LocalDateTimeAPI {
 		//localTime1: 22:15 --> 22 hour 15 minutes
 
 		
-		//parse a string
+		/**parse a string*/
 		LocalTime localTime2 = LocalTime.parse("20:15:30");
 		System.out.println("localTime: " + localTime2);
 		//localTime: 20:15:30

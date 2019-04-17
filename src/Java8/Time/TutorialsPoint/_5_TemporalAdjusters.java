@@ -14,17 +14,18 @@ import java.time.temporal.TemporalAdjusters;
 public class _5_TemporalAdjusters {
 
 	public static void main(String[] args) {
-		//Get the current date
+		
+		/**Get the current date*/
 		LocalDate today = LocalDate.now();
 		System.out.println("Current date: " + today);
 		//Current date: 2019-04-17
 
-		//get the next tuesday
+		/**get the next tuesday*/
 		LocalDate nextMonday = today.with(TemporalAdjusters.next(DayOfWeek.MONDAY));
 		System.out.println("Next Monday on : " + nextMonday);
 		//Next Monday on : 2019-04-22
 
-		//get the second saturday of next month
+		/**get the second saturday of next month*/
 		LocalDate firstOfMonth = LocalDate.of(today.getYear(),today.getMonth(), 1);
 		System.out.println("First Of Month: "+firstOfMonth);
 		//First Of Month: 2019-04-01
