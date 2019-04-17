@@ -7,6 +7,7 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.Month;
+import java.time.format.DateTimeFormatter;
 
 /**
  * @author Tousif
@@ -61,8 +62,9 @@ public class _1_LocalDateTimeAPI {
 
 		
 		/**parse a string*/
-		LocalTime localTime2 = LocalTime.parse("20:15:30");
+		LocalTime localTime2 = LocalTime.parse("22:15:30");
 		System.out.println("localTime: " + localTime2);
 		//localTime: 20:15:30
+		
 	}
 }
