@@ -45,11 +45,11 @@ public class _1_LocalDateTimeAPI {
 		System.out.println("Month: " + month2 +" day: " + day2);
 		//Month: APRIL day: 16
 
-		
+		/**Printing specific date with current time*/
 		LocalDateTime localDateTimeNow2 = localDateTimeNow.withDayOfMonth(10).withYear(2012);
 		System.out.println("localDateTimeNow2: " + localDateTimeNow2);
 		//localDateTimeNow2: 2012-04-10T17:52:43.544
-
+		
 		
 		LocalDate localDate3 = LocalDate.of(2014, Month.DECEMBER, 12);
 		System.out.println("localDate3: " + localDate3);

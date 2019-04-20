@@ -13,7 +13,7 @@ import java.time.temporal.ChronoUnit;
  * @author Tousif
  *
  */
-public class _4_PeriodAndDuration {
+public class _5_PeriodAndDuration {
 
 	public static void main(String[] args) {
 		

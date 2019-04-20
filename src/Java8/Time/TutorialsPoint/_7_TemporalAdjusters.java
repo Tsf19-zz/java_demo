@@ -11,7 +11,7 @@ import java.time.temporal.TemporalAdjusters;
  * @author Tousif
  *
  */
-public class _5_TemporalAdjusters {
+public class _7_TemporalAdjusters {
 
 	public static void main(String[] args) {
 		

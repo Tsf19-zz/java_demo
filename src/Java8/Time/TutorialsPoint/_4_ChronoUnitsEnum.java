@@ -11,7 +11,7 @@ import java.time.temporal.ChronoUnit;
  * java.time.temporal.ChronoUnit enum is added in Java 8 to replace the integer values
  * used in old API to represent day, month, etc. Let us see them in action.
  */
-public class _3_ChronoUnitsEnum {
+public class _4_ChronoUnitsEnum {
 
 	public static void main(String[] args) {
 
