@@ -22,7 +22,7 @@ import Java8.JavaBrains._2_PersonSorting.Java7Way_1_.Person;
  * in the order of iteration (if an iteration order is specified).
  * Exceptions thrown by the action are relayed to the caller.
  */
-public class _1_MethodReferenceExample {
+public class _1_forEachExample {
 
 	public static void main(String[] args) {
 		List<Person> persons = Arrays.asList(
@@ -33,7 +33,12 @@ public class _1_MethodReferenceExample {
 				new Person("firstName4","CdlastName4",44),
 				new Person("firstName5","blastName5",55)
 				);
-		
+		/**
+		 * forEach() doesn't care about sequence of execution,
+		 * some part of the list can be get executed in this processor while
+		 * other part of the list can be get executed in other processor.
+		 * This makes it possible to have multithreading and parallelism. 
+		 */
 		persons.forEach(p -> System.out.println(p));
 		//OR
 		persons.forEach(System.out::println);
