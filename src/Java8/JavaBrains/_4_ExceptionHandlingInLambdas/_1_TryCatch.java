@@ -1,7 +1,7 @@
 /**
  * 
  */
-package Java8.JavaBrains._4_ExceptionHandlingInLambdas._1_TryCatch;
+package Java8.JavaBrains._4_ExceptionHandlingInLambdas;
 
 import java.util.function.BiConsumer;
 
@@ -9,7 +9,7 @@ import java.util.function.BiConsumer;
  * @author Tousif
  *
  */
-public class App {
+public class _1_TryCatch {
 
 	public static void process(int [] someNumbers,int key, BiConsumer<Integer, Integer> consumer){
 

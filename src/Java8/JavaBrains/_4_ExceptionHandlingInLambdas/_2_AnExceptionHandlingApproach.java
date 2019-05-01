@@ -1,7 +1,7 @@
 /**
  * 
  */
-package Java8.JavaBrains._4_ExceptionHandlingInLambdas._2_AnExceptionHandlingApproach;
+package Java8.JavaBrains._4_ExceptionHandlingInLambdas;
 
 import java.util.function.BiConsumer;
 
@@ -9,7 +9,7 @@ import java.util.function.BiConsumer;
  * @author Tousif
  *
  */
-public class App {
+public class _2_AnExceptionHandlingApproach {
 
 	public static void main(String[] args) {
 		int [] someNumbers = {1,2,3,4};
