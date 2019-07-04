@@ -2,7 +2,9 @@ package Java8_features.java67;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.IntSummaryStatistics;
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * @author DOMAIN\md.tousif
@@ -42,6 +44,12 @@ public class _3_FiltersDemo {
                 .filter(s -> s.startsWith("G"))
                 .forEach(System.out::println);
         
+        // Using count filter
+        System.out.println("Count Elements whose length is > 6");
+        Long count = versions.stream()
+                .filter(s -> s.length() > 6)
+                .count();
+        System.out.printf("count is : %d \n",count);
 
         // another example of filter() method in Java 8
         List<Integer> listOfNumbers = Arrays.asList(1, 2, 3, 4, 5, 6, 12, 18);
@@ -50,6 +58,26 @@ public class _3_FiltersDemo {
                 .filter(i -> i % 3 == 0)
                 .findFirst().get();
         System.out.println("first number divisible by 2 and 3 in the list is : "+ lcm);
+        
+        
+     // Create List of square of all distinct numbers
+        List<Integer> numbers = Arrays.asList(9, 10, 3, 4, 7, 3, 4);
+        List<Integer> distinct = numbers.stream()
+                                         .map(i -> i*i).distinct()
+                                         .collect(Collectors.toList());
+        System.out.printf("Original List : %s, \n Square Without duplicates : %s %n",
+                                          numbers, distinct);
+     
+        //Get count, min, max, sum, and average for numbers
+        List<Integer> primes = Arrays.asList(2, 3, 5, 7, 11, 13, 17, 19, 23, 29);
+        IntSummaryStatistics stats = primes.stream()
+                                           .mapToInt(x -> x)
+                                           .summaryStatistics();
+        
+        System.out.println("Highest prime number in List : " + stats.getMax());
+        System.out.println("Lowest prime number in List : " + stats.getMin());
+        System.out.println("Sum of all prime numbers : " + stats.getSum());
+        System.out.println("Average of all prime numbers : " + stats.getAverage());
 		
 	}
 
