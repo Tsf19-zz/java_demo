@@ -1,7 +1,11 @@
-package StringJoiner;
+package Java8_features.StringJoiner;
 
 import java.util.Arrays;
 
+/**
+ * @author DOMAIN\md.tousif
+ *
+ */
 public class StringJoinerDemo {
 
 	public static void main(String[] args) {

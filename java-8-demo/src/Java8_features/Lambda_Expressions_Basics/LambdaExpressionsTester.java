@@ -1,4 +1,4 @@
-package Lambda_Expressions_Basics;
+package Java8_features.Lambda_Expressions_Basics;
 
 /**
  * @author Tousif
