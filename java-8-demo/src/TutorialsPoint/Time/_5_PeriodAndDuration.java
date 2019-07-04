@@ -1,7 +1,7 @@
 /**
  * 
  */
-package Time.TutorialsPoint;
+package TutorialsPoint.Time;
 
 import java.time.Duration;
 import java.time.LocalDate;

@@ -1,7 +1,7 @@
 /**
  * 
  */
-package Time.TutorialsPoint;
+package TutorialsPoint.Time;
 
 import java.time.DayOfWeek;
 import java.time.LocalDate;
