@@ -12,6 +12,11 @@ import java.util.stream.Collectors;
  * [[3,7],[23],[2,3,7]]. If we want to flatten this stream of a stream into a stream of values,
  * we can use the flatMap() which will finally return [3,7,2,3,2,3,7].
  * This is only called as flattening of stream
+ * 
+ * If you use a function which returns a list of values in map() operation you get a Stream of Stream
+ * and by using flatMap you can convert that to Stream of values.
+ * In short, you can combine several small lists of values into a big list of values using flatMap().
+ * It's called flatMap() because it flattens the Stream.
  */
 public class FlatMapDemo {
 
