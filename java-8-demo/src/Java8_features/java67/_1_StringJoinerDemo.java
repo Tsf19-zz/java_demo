@@ -1,4 +1,4 @@
-package Java8_features.StringJoiner;
+package Java8_features.java67;
 
 import java.util.Arrays;
 
@@ -6,7 +6,7 @@ import java.util.Arrays;
  * @author DOMAIN\md.tousif
  *
  */
-public class StringJoinerDemo {
+public class _1_StringJoinerDemo {
 
 	public static void main(String[] args) {
 

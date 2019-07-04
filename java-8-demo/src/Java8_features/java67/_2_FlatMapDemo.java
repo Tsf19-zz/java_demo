@@ -1,4 +1,4 @@
-package Java8_features.FlatMap;
+package Java8_features.java67;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -18,7 +18,7 @@ import java.util.stream.Collectors;
  * In short, you can combine several small lists of values into a big list of values using flatMap().
  * It's called flatMap() because it flattens the Stream.
  */
-public class FlatMapDemo {
+public class _2_FlatMapDemo {
 
 	public static void main(String[] args) {
 
