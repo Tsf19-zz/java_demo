@@ -18,7 +18,8 @@ import java.util.List;
  * Comparable interface has method public int compareTo(Object o) which returns a negative integer, zero, or a positive integer
  * as this object is less than, equal to, or greater than the specified object.
  * 
- * Difference between these two is Comparator in Java compare two objects provided to him, while Comparable interface compares "this" reference with the object specified.
+ * Difference between these two is Comparator in Java compare two objects provided to him,
+ * while Comparable interface compares "this" reference with the object specified.
  * 
  * Comparable in Java is used to implement natural ordering of object.
  * In Java API String, Date and wrapper classes implements Comparable interface.
