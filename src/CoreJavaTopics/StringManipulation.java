@@ -74,7 +74,24 @@ public class StringManipulation {
 			e.printStackTrace();
 		}
 		
+		String str8 = "I [need] this ]message () without (this[])";
+		str8 = str8.replaceAll("[\\[\\]\\(\\)]", "");
+		System.out.println("str8 :"+str8);
 		
+		String str9 = "I [need] this ]message () without (this[])".replaceAll("[()\\[\\]]", "");
+		System.out.println("str9 :"+str9);
+		
+		String str10 = "[String]";
+		str10 = str10.replaceAll("[\\[\\]]", ""); //The outer [] means: one of the inner symbols
+		System.out.println("str10 :"+str10);
+		
+		String str11 = "[String]";
+		str11 = str11.replaceAll("^\\[+|\\]+$", "");
+		System.out.println("str11 :"+str11);
+		
+		String str12 = "[String]";
+		str12 = str12.substring(1, str12.length()-1);
+		System.out.println("str12 :"+str12);
 	}
 
 }
