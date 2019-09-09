@@ -3,6 +3,10 @@ package CoreJavaTopics;
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
 import java.net.URLEncoder;
+import java.util.Arrays;
+import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class StringManipulation {
 
@@ -92,6 +96,48 @@ public class StringManipulation {
 		String str12 = "[String]";
 		str12 = str12.substring(1, str12.length()-1);
 		System.out.println("str12 :"+str12);
+		
+		//String to chop hyphen, hash and space
+		String str13 = "Semi-centrifugal clutch#clutchs";
+		
+		boolean contains1 = str13.contains("-");
+		boolean contains2 = str13.contains("#");
+		boolean contains3 = str13.contains(" ");
+		
+		String[] str13Array = str13.split("\\-|\\#|\\ ");
+		for(String str : str13Array) {
+			System.out.println(str);
+		}
+		
+		
+		String regex1 = "(.*[a-zA-Z].*)";
+		String regex2 = "(.*[0-9].*)";
+		
+		List<String> strArr = Arrays.asList("7", "A", "a", "77", "AA", "A7", "7A", "AA77", "7AA7", "A77A", "AAa77", "7AaA7", "A7a7A");
+		for(String str : strArr) {
+			if((str.matches(regex1) && str.matches(regex2)))
+				str = str.toLowerCase();
+			System.out.println(str +"\t" + (str.matches(regex1) && str.matches(regex2)));
+		}
+		
+		System.out.println();
+
+		Pattern pattern = Pattern.compile("(([A-Z].*[0-9])|([0-9].*[A-Z]))");
+		Matcher matcher = null;
+		for(String str : strArr) {
+			matcher = pattern.matcher(str);
+			
+			if(matcher.find())
+				str = str.toLowerCase();
+			
+			System.out.println(str +"\t");
+		}
+
+		
+//		if(alphaNumeri.matches("^[a-zA-Z0-9]*$"))
+//			System.out.println("alphanumeric : " + alphaNumeri.toLowerCase());
+		
+		
 	}
 
 }

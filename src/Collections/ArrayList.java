@@ -26,6 +26,11 @@ public class ArrayList {
 		}
 		// O/P: 1,2,3,4,5,6
 		
+		
+		int[] intArr = {9,0,3,9,9,4,1,1,2,1};
+		//PRINTING char intArr[] USING Arrays.toString(intArr) :
+		System.out.println("PRINTING char intArr[] USING Arrays.toString(intArr) :");
+		System.out.println(Arrays.toString(intArr));
 	}
 
 }
