@@ -49,6 +49,7 @@ public class StringManipulation {
 //		(_)+ : any sequence of spaces that matches none of the above, meaning it's in the middle
 		
 		str5 = str1.replaceAll("^ +| +$|( )+" , " ");
+		
 		System.out.println("str5 :"+str5);
 		//-this-is-a-paragraph-it-contains-words-and-sentences-and-separators-
 		
@@ -137,6 +138,11 @@ public class StringManipulation {
 //		if(alphaNumeri.matches("^[a-zA-Z0-9]*$"))
 //			System.out.println("alphanumeric : " + alphaNumeri.toLowerCase());
 		
+//		("^{") && ("}+$")
+		String s = "{\"customLine.id\":2}";
+		if(s.startsWith("{") && s.endsWith("}")) {
+			System.out.println("TRUE");
+		}
 		
 	}
 
